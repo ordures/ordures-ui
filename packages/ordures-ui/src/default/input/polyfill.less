@@ -1,0 +1,31 @@
+@import '../ordures.less';
+
+.ant-input {
+  padding: 5px 12px;
+
+  &::placeholder {
+    color: fade(@ordures-text-color-dark, 45);
+  }
+}
+
+.ant-input[disabled] {
+  background-color: @ordures-disabled-bg;
+
+  &::placeholder {
+    color: fade(@ordures-text-color-dark, 20);
+  }
+}
+
+.ant-input-search .ant-input.ant-input-disabled {
+  &:hover,
+  &:focus {
+    border-color: @ordures-disabled-border;
+  }
+}
+
+.ant-input:focus,
+.ant-input-focused,
+.ant-input-affix-wrapper-focused,
+.ant-input-affix-wrapper:focus {
+  border-color: @ordures-primary-color;
+}

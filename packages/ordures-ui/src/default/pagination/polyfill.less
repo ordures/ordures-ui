@@ -1,0 +1,53 @@
+@import '../ordures.less';
+
+.ant-select,
+.ant-pagination-item a {
+  color: fade(@ordures-text-color-dark, 65);
+}
+
+.ant-pagination-item,
+.ant-pagination-prev .ant-pagination-item-link,
+.ant-pagination-next .ant-pagination-item-link {
+  border-color: #bdc5d3;
+}
+
+.ant-pagination-item-active {
+  border-color: @ordures-primary-color;
+
+  a {
+    color: #fff;
+  }
+
+  &:hover,
+  &:focus-visible {
+    border-color: @ordures-primary-color;
+
+    a {
+      color: #fff;
+    }
+  }
+}
+
+.ant-pagination-prev,
+.ant-pagination-next {
+  color: @ordures-primary-color;
+
+  &:not(.ant-pagination-disabled) .ant-pagination-item-link {
+    &:hover {
+      .anticon {
+        color: @ordures-primary-color;
+      }
+    }
+  }
+}
+
+.ant-pagination-options-quick-jumper {
+  color: fade(@ordures-text-color-dark, 65);
+
+  input {
+    &:focus,
+    &-focused {
+      border-color: @ordures-primary-color;
+    }
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "name": "@ordures/shared-utils",
+  "version": "0.0.1",
+  "license": "MIT",
+  "main": "lib/index.js",
+  "files": [
+    "lib",
+    "es"
+  ],
+  "dependencies": {
+    "@ordures/less2js": "^0.0.1"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}

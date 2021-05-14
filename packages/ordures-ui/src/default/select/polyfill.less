@@ -1,0 +1,35 @@
+@import '../ordures.less';
+
+.ant-select-disabled {
+  color: fade(@ordures-text-color-dark, 45);
+}
+
+.ant-select input {
+  &::placeholder {
+    color: fade(@ordures-text-color-dark, 45);
+  }
+}
+
+.ant-select-disabled.ant-select:not(.ant-select-customize-input) .ant-select-selector {
+  background-color: #fafafa;
+  border-color: fade(@ordures-text-color-dark, 8);
+}
+
+.ant-select:not(.ant-select-disabled):hover .ant-select-selector {
+  border-color: @ordures-active-border-color-base;
+}
+
+.ant-select:not(.ant-select-disabled):focus .ant-select-selector,
+.ant-select-focused:not(.ant-select-disabled).ant-select:not(.ant-select-customize-input) .ant-select-selector {
+  border-color: @ordures-active-border-color-base;
+}
+
+.ant-select.ant-select-disabled.ant-select-multiple .ant-select-selection-item {
+  border-color: @ordures-disabled-border;
+}
+
+.ant-select-dropdown {
+  .ant-select-item.ant-select-item-option:not(.ant-select-item-option-disabled) {
+    color: fade(@ordures-text-color-dark, 85);
+  }
+}

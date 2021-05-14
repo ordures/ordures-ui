@@ -1,0 +1,4 @@
+lib
+es
+./lib/**/*.css
+./es/**/*.css

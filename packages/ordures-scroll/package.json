@@ -1,0 +1,14 @@
+{
+  "name": "@ordures/scroll",
+  "version": "0.0.1",
+  "description": "美化windows系统上滚动条的样式",
+  "main": "lib/index.js",
+  "license": "MIT",
+  "files": [
+    "lib",
+    "dist"
+  ],
+  "publishConfig": {
+    "access": "public"
+  }
+}
